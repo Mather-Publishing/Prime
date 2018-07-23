@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>
+	
+        Mather
+    
+</title>
+   <style>
+       body{
+           background-color:darkgray
+       }
+       #instructions{
+           font-family:'Segoe UI';
+           font-size:24px;
+           text-align:center;
+           }
+   </style>
+   
+</head>
+<body style="height: 435px">
+    <p id="instructions">
+        Type the number you want to be prime factored here!
+    </p>
+    <input type="number" id="Number">
+   <button onclick="factor()">Factor</button>
+     <script>
+         function factor() {
+             var Numbertofactor = document.getElementById("Number").value;
+             var result = ("instructions").innerHTML = ((1 / (5 ^ 0.5)) * ((((1 + (5 ^ 0.5)) / 2) ^ (Numbertofactor - 1)) - (((1 - (5 ^ 0.5)) / 2) ^ (Numbertofactor - 1))) + (1 / (5 ^ 0.5)) * ((((1 + (5 ^ 0.5)) / 2) ^ (Numbertofactor + 1)) - (((1 - (5 ^ 0.5)) / 2) ^ (Numbertofactor + 1))));
+             var showable = result.toFixed(4)
+             document.getElementById("instructions").innerHTML = showable
+         }
+</script>
+
+
+    
+   
+
+</body></html>
